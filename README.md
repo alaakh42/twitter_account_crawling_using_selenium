@@ -1,9 +1,5 @@
 # twitter_account_crawling_using_selenium
-A project that crawls tweets and their replies of any twitter accounts using Selenium
-
-
-I used RT mongo >> as a database management system
-       postman >> to send the POST requests with parameters projectId, accountName and action
+## A project that crawls tweets and their replies of any twitter account using Selenium
 
 To run this project:
 
@@ -24,5 +20,7 @@ and then selecting the tweets with thte replies and extracting thier ids and oth
 This is responsible for aligning the tweets and their replies in the `corpus` collection in `annotation_projectId` dataset
 
 
-
-
+NOTES::
+	- I used [Robo3T](https://robomongo.org/download) as a database management system to keep track of all the collections and databases
+	- Also, I organized the DB in a way that every **projectId** is used to create the `annotation_projectId` database with 2 collections in it `corpus` and `logging` where corpus contains the tweets in field 'body', replies in field 'answer', creation date, 
+	- I used [postman](https://www.getpostman.com/apps) to send the POST requests with the parameters projectId, accountName and action
