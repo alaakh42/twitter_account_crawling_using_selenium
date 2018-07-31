@@ -11,16 +11,16 @@ I am using 2 drivers (chrome and htmlunit with javascript) the chromedriver is f
  `java -jar selenium_server&chrome_driver/selenium-server-standalone-3.13.0.jar`  
 
 3. Run the `app.py` script that will start crawling the account tweets, this script has 2 main functions 
-> Fetching replies Ids  `tweetsIdsFetcher()`
-This is responsible for following search links in twitter(the one's you get when using advanced search options) e.g. the link will look like this:
-https://twitter.com/search?f=tweets&vertical=default&q=from%3Aelonmusk%20since%3A2014-07-21%20until%3A2014-07-22include%3Aretweets&src=typd 
-and then selecting the tweets with thte replies and extracting thier ids and other metadata
+	> Fetching replies Ids  `tweetsIdsFetcher()`
+	This is responsible for following search links in twitter(the one's you get when using advanced search options) e.g. the link will look like this:
+	https://twitter.com/search?f=tweets&vertical=default&q=from%3Aelonmusk%20since%3A2014-07-21%20until%3A2014-07-22include%3Aretweets&src=typd 
+	and then selecting the tweets with thte replies and extracting thier ids and other metadata
 
-> Fetching Tweets and thier replies text `tweetsAndRepliesFetcher()`
-This is responsible for aligning the tweets and their replies in the `corpus` collection in `annotation_projectId` dataset
+	> Fetching Tweets and thier replies text `tweetsAndRepliesFetcher()`
+	This is responsible for aligning the tweets and their replies in the `corpus` collection in `annotation_projectId` dataset
 
 
-NOTES::
-	-	I used [Robo3T](https://robomongo.org/download) as a database management system to keep track of all the collections and databases
-	-	Also, I organized the DB in a way that every **projectId** is used to create the `annotation_projectId` database with 2 collections in it `corpus` and `logging` where corpus contains the tweets in field 'body', replies in field 'answer', creation date, 
-	-	I used [postman](https://www.getpostman.com/apps) to send the POST requests with the parameters projectId, accountName and action
+### NOTES
+- I used [Robo3T](https://robomongo.org/download) as a database management system to keep track of all the collections and databases
+- Also, I organized the DB in a way that every **projectId** is used to create the `annotation_projectId` database with 2 collections in it `corpus` and `logging` where corpus contains the tweets in field 'body', replies in field 'answer', creation date
+- I used [Postman](https://www.getpostman.com/apps) to send the POST requests with the parameters projectId, accountName and action
