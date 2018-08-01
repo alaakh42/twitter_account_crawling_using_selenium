@@ -20,7 +20,7 @@ I am using 2 drivers (chrome and htmlunit with javascript) the chromedriver is f
 	This is responsible for aligning the tweets and their replies in the `corpus` collection in `annotation_projectId` dataset
 
 4. (Optional) to run `app.py` as a Windows background service, you have to run `create_windows_bgprocess.py`. If 
-you are on Linux use the following command ```ohup python app.py & ```
+you are on Linux use the following command ```nohup python app.py & ```
 ### NOTES
 - I used [Robo3T](https://robomongo.org/download) as a database management system to keep track of all the collections and databases
 - Also, I organized the DB in a way that every **projectId** is used to create the `annotation_projectId` database with 2 collections in it `corpus` and `logging` where corpus contains the tweets in field 'body', replies in field 'answer', creation date
