@@ -10,7 +10,7 @@ def init_driver(browser= "htmlunit"):
            desired_capabilities=DesiredCapabilities.HTMLUNIT)
         driver.implicitly_wait(3) # implicit waits to reduce chance of timeouts
     if browser == "chrome":
-        driver = webdriver.Chrome("../selenium_server&chrome_driver/chromedriver")
+        driver = webdriver.Chrome(executable_path="selenium_server&chrome_driver/chromedriver")
 #        driver = webdriver.Remote(
 #           command_executor='http://127.0.0.1:4444/wd/hub',
 #           desired_capabilities=DesiredCapabilities.CHROME)

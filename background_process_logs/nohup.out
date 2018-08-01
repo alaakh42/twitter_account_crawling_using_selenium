@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "code/app.py", line 251, in <module>
+    twitterCrawlingService() # you probably would need to comment that if you are on windows and wanna run it as a bg process
+  File "code/app.py", line 241, in twitterCrawlingService
+    p1 = Process(target = tweetsIdsFetcher())
+  File "code/app.py", line 127, in tweetsIdsFetcher
+    driver = init_driver(browser="chrome") # only sart the driver if there is something to crawl
+  File "/media/alaa/Alaa Khaled/Study/Github_Repos/twitter_account_crawling_using_selenium/code/project_template_utilties.py", line 13, in init_driver
+    driver = webdriver.Chrome("../selenium_server&chrome_driver/chromedriver")
+  File "/home/alaa/anaconda2/lib/python2.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/home/alaa/anaconda2/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+Traceback (most recent call last):
+  File "code/app.py", line 251, in <module>
+    twitterCrawlingService() # you probably would need to comment that if you are on windows and wanna run it as a bg process
+  File "code/app.py", line 241, in twitterCrawlingService
+    p1 = Process(target = tweetsIdsFetcher())
+  File "code/app.py", line 127, in tweetsIdsFetcher
+    driver = init_driver(browser="chrome") # only sart the driver if there is something to crawl
+  File "/media/alaa/Alaa Khaled/Study/Github_Repos/twitter_account_crawling_using_selenium/code/project_template_utilties.py", line 13, in init_driver
+    driver = webdriver.Chrome("../selenium_server&chrome_driver/chromedriver")
+  File "/home/alaa/anaconda2/lib/python2.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/home/alaa/anaconda2/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+Traceback (most recent call last):
+  File "code/app.py", line 251, in <module>
+    twitterCrawlingService() # you probably would need to comment that if you are on windows and wanna run it as a bg process
+  File "code/app.py", line 241, in twitterCrawlingService
+    p1 = Process(target = tweetsIdsFetcher())
+  File "code/app.py", line 127, in tweetsIdsFetcher
+    driver = init_driver(browser="chrome") # only sart the driver if there is something to crawl
+  File "/media/alaa/Alaa Khaled/Study/Github_Repos/twitter_account_crawling_using_selenium/code/project_template_utilties.py", line 13, in init_driver
+    driver = webdriver.Chrome("../selenium_server&chrome_driver/chromedriver.exe")
+  File "/home/alaa/anaconda2/lib/python2.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/home/alaa/anaconda2/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+Traceback (most recent call last):
+  File "code/app.py", line 251, in <module>
+    twitterCrawlingService() # you probably would need to comment that if you are on windows and wanna run it as a bg process
+  File "code/app.py", line 241, in twitterCrawlingService
+    p1 = Process(target = tweetsIdsFetcher())
+  File "code/app.py", line 131, in tweetsIdsFetcher
+    with open('../api_keys/api_keys.json') as f:
+IOError: [Errno 2] No such file or directory: '../api_keys/api_keys.json'

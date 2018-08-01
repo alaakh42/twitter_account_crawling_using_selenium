@@ -128,7 +128,7 @@ def tweetsIdsFetcher():
     else:
         print("THERE IS NO THING TO CRAWL")
         tweetsAndRepliesFetcher() #return, go query other corpus for any of used=false tweets_ids 
-    with open('../api_keys/api_keys.json') as f:
+    with open('api_keys/api_keys.json') as f:
       keys = json.load(f)
     # Do authentication to call API
     try:
