@@ -1,4 +1,4 @@
-# twitter_account_crawling_using_selenium
+# Twitter Accounts Crawling using Selenium
 ## A project that crawls tweets and their replies of any twitter account using Selenium
 
 To run this project:
